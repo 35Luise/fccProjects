@@ -9,3 +9,61 @@
     --solid-border: 1px solid black;
     --dashed-border: 1px dashed black;
 }
+
+.available-0 {
+    background-color: var(--color0);
+}
+
+.available-1 {
+    background-color: var(--color1);
+}
+
+.available-2 {
+    background-color: var(--color2);
+}
+
+.available-3 {
+    background-color: var(--color3);
+}
+
+.available-4 {
+    background-color: var(--color4);
+}
+
+.available-5 {
+    background-color: var(--color5);
+}
+
+.sharp td {
+    border-bottom: var(--solid-border);
+}
+
+.half td {
+    border-bottom: var(--dashed-border);
+}
+
+#legend {
+    margin-top: 20px;
+}
+
+#legend-gradient {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(
+        90deg,
+        var(--color0) 0%,
+        var(--color0) 17%,
+        var(--color1) 17%,
+        var(--color1) 34%,
+        var(--color2) 34%,
+        var(--color2) 51%,
+        var(--color3) 51%,
+        var(--color3) 67%,
+        var(--color4) 67%,
+        var(--color4) 85%,
+        var(--color5) 85%,
+        var(--color5) 100%
+
+    );
+}
