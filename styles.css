@@ -1,0 +1,11 @@
+:root {
+    --color0: #DBF3C9;
+    --color1: #B7E892;
+    --color2: #93DC5C;
+    --color3: #32CD32;
+    --color4: #08A045;
+    --color5: #C3F550;
+
+    --solid-border: 1px solid black;
+    --dashed-border: 1px dashed black;
+}
