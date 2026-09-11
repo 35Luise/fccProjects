@@ -60,7 +60,7 @@ class BankAccount {
 // Instance of the object
 const myAccount = new BankAccount();
 // Transactions
-console.log(myAccount.deposit(100));
+myAccount.deposit(100);
 myAccount.withdraw(100);
 myAccount.deposit(300);
 myAccount.withdraw(50);
