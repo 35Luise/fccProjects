@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #16213e, #0f3460);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.weather-app {
+  width: 100%;
+  max-width: 650px;
+  padding: 20px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 35px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.search-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+select {
+  flex: 1;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  color: #222;
+}
+
+button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #06283d;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #7dd3fc;
+}
+
+.weather-info {
+  display: none;
+}
+
+.location-section {
+  margin-bottom: 15px;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#location {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+#weather-main {
+  color: #cbd5e1;
+  text-transform: capitalize;
+}
+
+.temperature {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 15px 0 30px;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.detail {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 500px) {
+  .weather-card {
+    padding: 25px 18px;
+  }
+
+  .search-area {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .temperature {
+    font-size: 3rem;
+  }
+}
